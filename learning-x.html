@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Alumni Talks</title>
+
+  <!--CSS only-->
+  <link rel="stylesheet" href="style.css">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--GSAP core plugin-->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+  <!--GSAP scroll trigger-->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="logo learning x.png" style="height: 10vh; width: 10vh;"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">UPSC CSE - GS</a>
+            <a class="dropdown-item" href="#">
+              IIT JEE</a>
+            <a class="dropdown-item" href="#">NEET UG</a>
+            <a class="dropdown-item" href="#">CSIR UGC Net</a>
+            <a class="dropdown-item" href="#">IIT Jee</a>
+            <a class="dropdown-item" href="#">Plus</a>
+            <a class="dropdown-item" href="#">SSC</a>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container text-center" style="background-image:url(OIP.jpg); background-size: cover;">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-white">
+          <h1 style="text-align: left;color: rgb(105, 190, 105)">learning-x</h1>
+          <h6 style="text-align: left; color: rgb(105, 190, 105);">now MONEY is not a hurdle between you and your dream</h6>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-1">
+    <div class="container text-center";">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div class="panel text-left">
+            <h1>ABOUT</h1>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;background-color: rgb(105, 190, 105);" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <p class="pt-4">
+              Welcome to our website, dedicated to providing free education related courses to individuals of all ages and backgrounds. We believe in the power of education to change lives, and our goal is to make quality education accessible to everyone.
+
+              Our courses cover a wide range of subjects, from basic literacy and numeracy to more advanced topics in science, technology, engineering, and mathematics. All of our courses are designed and taught by experienced educators, and are constantly updated to ensure that they are current and relevant.
+              
+              Our learning platform is user-friendly and easily accessible, allowing you to study at your own pace and on your own schedule. Whether you're looking to gain new skills, advance your career, or simply satisfy your curiosity, we have something for everyone.
+              
+              In addition to our courses, we also offer a vibrant community of learners, where you can connect with others, ask questions, and receive support. Our goal is to create a supportive and inclusive learning environment, where everyone can thrive.
+              
+              So why wait? Sign up for one of our courses today and start your journey towards a better education and a brighter future.
+              
+            
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="pray">
+            <img src="R.jpg" class="img-fluid" style="height: 90vh; border-radius: 10%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="panel panel1 text-center">
+            <h1 class="x">TEST</h1>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%; background-color:  rgb(105, 190, 105);"  aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h4 class="x">COURSE</h4>
+                  <div class="row">
+                    <div class="col-12 col-sm-4 align-items-center">
+                      <img src="IIT-JEE-Mock-Test.jpg" class="image img-fluid" style="width:100%; height:40vh">
+                     
+                    </div>
+                    <div class="col-12 col-sm-4 align-items-center">
+                      <img src="NEET-Mock-Test-2022.jpg" class="image img-fluid" style="width:100%; height:40vh;">
+                    
+                    </div>
+                    <div class="col-12 col-sm-4 align-items-center">
+                      <img src="Mock-Test-Series-for-CBSE-Class-12-Phy-Chem-Math.jpg" class="image img-fluid" style="width:100%;">
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 align-items-center">
+                      <img class="image" src="UPSC-Prelims-Mock-Test.jpg" class="image img-fluid"
+                        style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <img class="image" src="free-ssc-and-banking-online-test-series-2018-ignited-officers.png" class="image img-fluid"
+                        style="width: 100%; height: 310px; padding: 5%;">
+                    </div>
+                  </div>
+                  <br>
+                  <h5 class="x">learning-x</h5>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="panel panel2 text-center">
+            <h1 class="x">UPCOMING-COURSES</h1>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%; background-color:  rgb(105, 190, 105);" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h4 class="x"></h4>
+                  <div class="row">
+                    <div class="col-12 col-sm-6 align-items-center">
+                      <img src="jee.jpeg" class="image img-fluid" style="width:80%;">
+
+                    </div>
+                    <div class="col-12 col-sm-3 align-items-center">
+                      <img src="neet.jpeg" class="image img-fluid" style="width:80%;">
+                      <br>
+                      <img src="UPSC.jpeg" class="image img-fluid" style="width:80%;">
+
+                    </div>
+                    <div class="col-12 col-sm-3 align-items-center">
+                      <img src="board.jpeg" class="image img-fluid" style="width:80%;">
+                      <br>
+                      <img src="ssc.jpeg" class="image img-fluid" style="width:80%;">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                
+                  <br>
+                  <div class="row">
+                    <div class="col-12 col-sm-4 align-items-center">
+                      <img class="image" src="UPSC.jpeg" class="image img-fluid"
+                        style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <img class="image" src="neet.jpeg" class="image img-fluid"
+                        style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <img class="image" src="ssc.jpeg" class="image img-fluid"
+                        style="width: 100%; padding: 5%;">
+                    </div>
+                  </div>
+                  <br>
+                  <h5 class="x">learning-x</h5>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-2">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="panel text-center">
+            <h1 class="x">Our Achievements</h1>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%; background-color:  rgb(105, 190, 105);" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-12 col-sm-4 align-items-center">
+                <img src="IMG20221209190332.jpg" class="image img-fluid" style="width:100%;height: 40vh;"><br>Danish Khan (AIR-07 MAINS-2022)
+              </div>
+              <div class="col-12 col-sm-4 align-items-center">
+                <img src="ayush.jpg" class=" image img-fluid" style="width:100%;height: 40vh;"><br>Ayush Pandey (99.67% IN 12th board)
+              </div>
+             
+                    <div class="col-12 col-sm-4 align-items-center">
+                      <img src="IMG_20221207_201228.jpg" class=" image img-fluid" style="width:100%;height: 40vh;"><br>Vikas Gupta (AIR-11 UPSC-Prelims 2022)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="panel text-center">
+            <h1 class="x">Demo-Videos</h1>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%; background-color:  rgb(105, 190, 105);" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-12 col-sm-4 align-items-center iframe-container">
+                <iframe class="image" width="100%" src="VideoGlitch_20211231_171147487.mp4" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+
+                <iframe class="image" width="100%" src="VideoGlitch_20211231_171147487.mp4" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="col-12 col-sm-4 align-items-center iframe-container">
+                <iframe class="image" width="100%" src="VideoGlitch_20211231_171147487.mp4" frameborder="0"
+                  allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+
+                <iframe class="image" width="100%" src="VideoGlitch_20211231_171147487.mp4" frameborder="0"
+                  allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="col-12 col-sm-4 align-items-center iframe-container">
+                <iframe class="image" width="100%" src="VideoGlitch_20211231_171147487.mp4" frameborder="0"
+                  allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+
+                <iframe class="image" width="100%" src="VideoGlitch_20211231_171147487.mp4" frameborder="0"
+                  allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--footer start-->
+  <main>
+    <section id='footer'>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-4 footer-top-left'>
+            <h1> Get Social <br>With Us<br><span class='dots'>...</span>
+            </h1>
+          </div>
+          <div class=col-2>
+          </div>
+          <div class='col-6 footer-top-right'>
+            <h5>learning-x</h5>
+            <p>O<br>
+             Now cost is not the hurdle in between you and your dream.<br><br>
+              <em>Ph: 03222-281860</em> <br>
+              <em>Email: aao@hijli.ernet.in</em>
+            </p>
+            <hr>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-2 '>
+            <span class='bar'>|</span>
+          </div>
+          <div class=col-2>
+            <i class="icon fab fa-facebook"></i>
+          </div>
+          <div class='col-2'>
+            <i class="icon fab fa-instagram"></i>
+          </div>
+          <div class='col-2'>
+            <i class="icon fab fa-twitter-square"></i>
+          </div>
+          <div class='col-2'>
+            <i class="icon fab fa-medium"></i>
+          </div>
+          <div class='col-2'>
+            <i class="icon fab fa-linkedin"></i>
+          </div>
+
+        </div>
+      </div>
+  </main>
+  <!-- 	Footer end	 -->
+
+
+  <script>
+    gsap.from('header', { opacity: 0, duration: 1 })
+    gsap.from('header h1', { opacity: 0, duration: 2, x: -200 })
+    gsap.from('header h6', { opacity: 0, duration: 2, x: -500 })
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.nav-item', {
+      scrollTrigger: {
+        trigger: '.nav-item',
+        toggleActions: "play none none none"
+      },
+      opacity: 0,
+      duration: 1,
+      x: -200
+    });
+
+
+    gsap.from('.section-1 h1', {
+      scrollTrigger: {
+        trigger: '.section-1 h1',
+        toggleActions: "play none none none"
+      },
+      opacity: 0,
+      duration: 1,
+      x: -200
+    });
+
+    gsap.from('.section-1 p', {
+      scrollTrigger: {
+        trigger: '.section-1 p',
+        toggleActions: "play none none none"
+      },
+      opacity: 0,
+      duration: 2.0,
+    });
+
+    gsap.from('.section-1 img', {
+      scrollTrigger: {
+        trigger: '.section-1 img',
+        toggleActions: "play none none none"
+      },
+      opacity: 0,
+      duration: 1.5,
+      x: 200
+    });
+
+    var arr = document.getElementsByClassName("x");
+    for (var i = 0; i < arr.length; i++) {
+
+      gsap.from(arr[i], {
+        scrollTrigger: {
+          trigger: arr[i],
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        duration: 1.5,
+        x: -200
+      });
+
+    }
+    var img_arr = document.getElementsByClassName("image");
+    for (var i = 0; i < img_arr.length; i++) {
+
+      gsap.from(img_arr[i], {
+        scrollTrigger: {
+          trigger: img_arr[i],
+          start: "top center",
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        duration: 1.5,
+      });
+
+    }
+    gsap.utils.toArray('#panel').forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        pin: true,
+        pinSpacing: false
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+</body>
+
+</html>
